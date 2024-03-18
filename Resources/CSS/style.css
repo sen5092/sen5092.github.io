@@ -1,0 +1,329 @@
+
+/* Reset default browser settings */
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+/* Nav banner bar at the top */
+
+.navbar {
+    color: black;
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(172, 122, 35);
+    width: 100%;
+}
+
+.navbar .nav-title {
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    margin-left: 1rem;
+    letter-spacing: 0.125rem;
+}
+
+/* .logo-image {
+    display: flex;
+    padding-left: 10px;
+    height: 50px;
+    align-items: center;
+}
+
+.logo-image img {
+    max-height: 100%;
+    width: auto;
+} */
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.825rem;
+    color: black;
+}
+
+.nav-links a {
+    text-decoration: underline;
+    margin-left: 20px;
+    color: black;
+}
+
+
+
+
+
+body {
+    opacity: 0.9;
+    background-color: rgba(194, 152, 152, 0.651);
+    font-size: 1.5rem;
+
+}
+
+
+
+
+
+
+
+
+/* Banner title bar */
+
+.banner {
+    display: flex;
+    align-items: center;
+    height: 700px; /* Set a height for the banner */
+    width: 1200px;
+
+    background-image: url("../Images/tomas-kirvela-rNUnz9fNr8E-unsplash.jpg"); /* Set background image */
+    background-size: cover; /* Ensure the background image covers the container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+
+
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.banner-text {
+    display: flex;
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 400px;
+    position: relative;
+}
+
+.banner-text h2 {
+    margin: 10 10;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .banner {
+
+        display: flex;
+        align-items: center;
+        height: 700px; /* Set a height for the banner */
+        width: auto;
+        margin: 0 auto;
+        justify-content: center;
+
+        background-image: url("../Images/tomas-kirvela-rNUnz9fNr8E-unsplash.jpg"); /* Set background image */
+        background-size: cover; /* Ensure the background image covers the container */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat;
+    
+    }
+}
+
+
+@media only screen and (max-width: 700px){
+    .banner {
+
+        display: flex;
+        align-items: center;
+        height: 700px; /* Set a height for the banner */
+        width: auto;
+        background-image: url("../Images/florian-hahn-tHbt8-7p4eM-unsplash.jpg"); /* Set background image */
+        background-size: cover; /* Ensure the background image covers the container */
+        background-position: center; /* Center the background image */
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+
+
+    .banner-text {
+        display: flex;
+        text-align: center;
+        background-color: white;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 1rem;
+        margin-bottom: 400px;
+        position: relative;
+        font-size: 0.85em;
+    }
+
+}
+
+
+
+
+
+
+
+/* Mission section */
+
+.the-mission {
+    width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    min-width: 400px;
+}
+
+.the-mission-text h2 {
+    text-decoration: underline;
+}
+
+.the-mission-text p {
+    line-height: 1.7em;
+}
+
+.first-word {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 700px){
+    .the-mission {
+
+        width: auto;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .the-mission-text p {
+        font-size: 0.85em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+
+/* The Events section */
+
+.the-events {
+
+    text-align: center;
+    margin: 1rem 1rem;
+
+}
+
+.the-events h2 {
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black; /* Border style and color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.75em;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid black; /* Border style and color */
+    padding: 8px; /* Optional: Add padding to cells */
+}
+
+@media only screen and (max-width: 700px){
+
+    table {
+        font-size: 0.5em;
+    }
+
+}
+
+
+
+
+
+
+/* The Gallery section */
+
+.the-gallery {
+
+
+    width: 90%;
+    margin: 2rem auto;
+    text-align: center;
+    
+}
+
+.the-gallery h2 {
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.the-gallery h5 {
+    margin-bottom: 1rem;
+}
+
+.gallery-pic-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.the-gallery-picture  {
+}
+
+.tea-pictures h4 {
+    margin-top: 10px;
+}
+
+.the-gallery-picture img {
+    height: 550px;
+    width: 600px;
+}
+
+
+@media only screen and (max-width: 700px){
+
+    .the-gallery-picture img {
+        height: 350px;
+        width: 400px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* Footer Stuff */
+
+.the-contact {
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.the-footer .the-contact{
+    background-color: rgb(136, 123, 100);
+}
+
+
+.the-footer .copyright{
+    background-color: rgb(172, 122, 35);
+}
+
+.the-footer h5 {
+
+    margin-left: 1rem;
+    padding: 0.425rem;
+}
+
